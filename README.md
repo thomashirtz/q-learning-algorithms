@@ -3,10 +3,16 @@
 This repo will share content, notes and material to learn reinforcement leanring. 
 My first goal is to follow the DeepMind class, try to implement all the examples of the classes using Python and follow the core of the class as notes. Depeding on the progress, I may extend this to the Sutton Book. I will also share the material that helped me to understand when I had some issues as well as code for the different demonstration.
 
-## [Reinforcement Learning 1: Introduction to Reinforcement Learning](https://youtu.be/ISk80iLhdfU)
+## References:
+[Deepmind/UCL RL course on Youtube](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs)
+[Material for UCL Reinforcement Learning class](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html)
+[Reinforcement Learning: An Introduction - Richard S. Sutton and Andrew G. Barto.](RL%20DeepMind/RLbook2018.pdf)
+
+# [(Deepmind) Reinforcement Learning 1: Introduction to Reinforcement Learning](https://youtu.be/ISk80iLhdfU)
 
 What is reinforcement learning ?
-"Reinforcement learning (RL) is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize some notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning." -[Wikipedia](https://en.wikipedia.org/wiki/Reinforcement_learning)
+"Reinforcement learning (RL) is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize some notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning." 
+-[Wikipedia](https://en.wikipedia.org/wiki/Reinforcement_learning)
 
 # Reward & Return
 
