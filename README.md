@@ -153,3 +153,113 @@ Partial observability: The agent gets partial information
 Now the observation is not Markov\
 Formally this is a partially observable Markov decision process (POMDP)\
 The environment state can still be Markov, but the agent does not know it
+
+## Summary
+
+To deal with partial observability, agent can construct suitable state
+representations
+
+Examples of agent states:
+
+Last observation: St = Ot (might not be enough)
+Complete history: St = (might be too large)
+Some incrementally updated state: S_t = f(S_t-1,O_t)
+(E.g.. implemented with a recurrent neural network.)
+(Sometimes called 'memory'.)
+
+Constructing a Markov agent state may not be feasible; this is common!
+
+More importantly, the should state be contain enough informative for good
+policies, and/or good value predictions
+
+# Model
+
+![RL%20DeepMind/Untitled%201.png](RL%20DeepMind/Untitled%201.png)
+
+# Agent
+
+**Agent components**
+
+- Agent state
+- Policy
+- Value function
+- Model
+
+## Agent state
+
+The agent state is a function of the history
+
+The agent's action depends on its state
+
+More generally:
+
+$$S_{t+l} = f(S_t, A_t, R_{t+l}, O_{t+l})$$
+
+## Policy
+
+**Policy is a mapping from states to action**
+
+It defines the agent's behaviour
+
+- Deterministic policy: A = π(S)
+- Stochastic policy: π(AIS) = p(AlS)
+
+The policy is a function that takes the current state S t and translates it into an action A t. In other words, this function maps the state space onto the action states in the Markov Decision Process.
+
+$$a_t=\pi(s_t)$$
+
+**Deterministic policies**
+• Always gives the same answer for a given state
+• In general, can depend on previous states and actions
+• For a MDP, deterministic policies depend only on the current state, because state transitions also depend only on the current state
+• For a MDP, an optimal deterministic policy always exists
+
+$$a_t \sim \pi(a|s_t),\ \sum_a \pi(a|s_t)=1$$
+
+**Stochastic (randomized) policies**
+• Generalize deterministic policies, different actions for the same state
+• For a MDP with known transition probabilities, we only need to consider
+deterministic policies
+• If transition probabilities are not known, randomization of actions allow
+exploration for a better estimation of the model.
+• May work better than a deterministic policy for a Partially Observed Markov
+Decision Process (POMDP)
+
+Off/One policy 
+
+Off policy: You don't appreciate the actual transitions in terms of where it leads you
+An off-policy learner learns the value of the optimal policy independently of the agent's actions. (Q-learning is an off-policy learner.) 
+
+An on-policy learner learns the value of the policy being carried out by the agent including the exploration steps.
+
+example of divergence not understood, need to come back to it 1:42:00
+
+## Value function
+
+The actual value function is the expected return:
+
+$$v_{\pi}(s)=\mathbb{E}[G_t|S_t=s,\pi] \\=\mathbb{E}[R_{t+1}+\gamma R_{t+2}+\gamma ^2R_{t+3}+... |S_t=s, \pi]$$
+
+We introduced a **discount factor** γ ∈ [0,1]
+
+Trades off importance of immediate vs long-term rewards
+
+The value depends on a policy
+
+Can be used to evaluate the desirability of states
+
+Can be used to select between actions
+
+Gamma incensitive to finish quicker !
+
+"Each reward be the difference in money that you have, the accumulation of this is the difference between what you have in the beginnning anf what you have in the end"
+Reinforcement Learning 1: Introduction to Reinforcement Learning
+57:35
+You can also have events ⇒ Reward when my money go above a certain level and get a penalty if it gets below this level
+Possible to weight differently where the losses are weighted more heavily
+
+![RL%20DeepMind/Untitled%202.png](RL%20DeepMind/Untitled%202.png)
+
+Value function ⇒ Using the value of state under policy pi
+Value-action function ⇒ Using the value of taking action under policy pi
+
