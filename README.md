@@ -2,11 +2,12 @@
 # 🔬 reinforcement_learning
 
 This repo will share content, notes and material to learn reinforcement leanring. 
-My first goal is to follow the DeepMind class, try to implement all the examples of the classes using Python and follow the core of the class as notes. Depeding on the progress, I may extend this to the Sutton Book. I will also share the material that helped me to understand when I had some issues as well as code for the different demonstration.
+My first goal is to follow the DeepMind class, try to implement all the demonstration of the classes using Python and share the notes related to the core consepts discussed in the class. Depending on the progress, I may extend this repo to the Sutton Book and work by Chapter. I will also share complementary material in each section.\
+I will try to not overwelm the reader with material and boil down the information.
 
 ## 📚 References:
-[📺 Deepmind/UCL RL course on Youtube](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs)\
-[📄 Material for UCL Reinforcement Learning class](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html)\
+[📺 Deepmind/UCL reinforcement learning courses on Youtube](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs)\
+[📄 Deepmind/UCL reinforcement learning website](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html)\
 [📓 Reinforcement Learning: An Introduction - Richard S. Sutton and Andrew G. Barto.](RL%20DeepMind/RLbook2018.pdf)\
 
 ## [(Deepmind) Reinforcement Learning 1: Introduction to Reinforcement Learning](https://youtu.be/ISk80iLhdfU)
