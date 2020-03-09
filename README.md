@@ -5,6 +5,8 @@ My first goal is to follow the DeepMind class, try to implement all the examples
 
 ## [Reinforcement Learning 1: Introduction to Reinforcement Learning](https://youtu.be/ISk80iLhdfU)
 
+What is reinforcement learning ?
+"Reinforcement learning (RL) is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize some notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning." -[Wikipedia](https://en.wikipedia.org/wiki/Reinforcement_learning)
 
 # Reward & Return
 
@@ -12,7 +14,7 @@ My first goal is to follow the DeepMind class, try to implement all the examples
 
 Return (G) is equal to the Cumulative reward (R)
 
-$$G_t=R_{t+1}+R_{t+2}+R_{t+3}+...$$
+![G_t=R_{t+1}+R_{t+2}+R_{t+3}+...](https://render.githubusercontent.com/render/math?math=G_t%3DR_%7Bt%2B1%7D%2BR_%7Bt%2B2%7D%2BR_%7Bt%2B3%7D%2B...)
 
 **Goal ⇒ Maximize the expected total cumulative reward**
 
