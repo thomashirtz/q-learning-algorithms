@@ -5,11 +5,9 @@ This repo will share content, notes and material to learn reinforcement leanring
 My first goal is to follow the DeepMind class, try to implement all the examples of the classes using Python and follow the core of the class as notes. Depeding on the progress, I may extend this to the Sutton Book. I will also share the material that helped me to understand when I had some issues as well as code for the different demonstration.
 
 ## References:
-[Deepmind/UCL RL course on Youtube](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs)
-
-[Material for UCL Reinforcement Learning class](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html)
-
-[Reinforcement Learning: An Introduction - Richard S. Sutton and Andrew G. Barto.](RL%20DeepMind/RLbook2018.pdf)
+[Deepmind/UCL RL course on Youtube](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs)\
+[Material for UCL Reinforcement Learning class](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html)\
+[Reinforcement Learning: An Introduction - Richard S. Sutton and Andrew G. Barto.](RL%20DeepMind/RLbook2018.pdf)\
 
 ## [(Deepmind) Reinforcement Learning 1: Introduction to Reinforcement Learning](https://youtu.be/ISk80iLhdfU)
 
@@ -18,7 +16,7 @@ My first goal is to follow the DeepMind class, try to implement all the examples
 TODO ~8m30
 
 What is reinforcement learning ?
-"Reinforcement learning (RL) is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize some notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning." 
+"Reinforcement learning (RL) is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize some notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning."\
 -[Wikipedia](https://en.wikipedia.org/wiki/Reinforcement_learning)
 
 You can have a reinforcement learning framework/Problems because of the sequential nature that they possess without necessarely applying reinforcement learning methods/algorithms to solve them.
@@ -113,7 +111,6 @@ Notation: E = Expected
 
 ![v(s)=\mathbb{E}\[G_t|S_t=s\] \\ =\mathbb{E}\[R_{t+1}+R_{t+2}+R_{t+3}+... |S_t=s\]](https://render.githubusercontent.com/render/math?math=v(s)%3D%5Cmathbb%7BE%7D%5BG_t%7CS_t%3Ds%5D%20%5C%5C%20%3D%5Cmathbb%7BE%7D%5BR_%7Bt%2B1%7D%2BR_%7Bt%2B2%7D%2BR_%7Bt%2B3%7D%2B...%20%7CS_t%3Ds%5D)
 <!-- v(s)=\mathbb{E}[G_t|S_t=s] \\ =\mathbb{E}[R_{t+1}+R_{t+2}+R_{t+3}+... |S_t=s] -->
-G_t=R_{t+1}+G_{t+1}
 Also:
 
 ![G_t=R_{t+1}+G_{t+1}](https://render.githubusercontent.com/render/math?math=G_t%3DR_%7Bt%2B1%7D%2BG_%7Bt%2B1%7D)
