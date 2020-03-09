@@ -71,7 +71,15 @@ Negative rewards encourage:
 - Reach a terminal state as quickly as possible to avoid accumulating
 penalties.
 
-### Discount Factor (β or γ)
+### Sparse/Shaped
+
+* Sparse reward ⇒ 1 win, 0 loss
+* Shaped reward (or shaping) ⇒ offers a smooth gradient of rewards as the agent approach the objective 
+
+Designing reward functions is a hard problem indeed. Generally, sparse reward functions are easier to define (e.g., get +1 if you win the game, else 0). However, sparse rewards also slow down learning because the agent needs to take many actions before getting any reward. This problem is also known as the **credit assignment problem**.
+https://www.cs.ubc.ca/~murphyk/Bayes/pomdp.html
+
+## Discount Factor (β or γ)
 
 [Stackexchange - Role of discount factor](https://stats.stackexchange.com/questions/221402/understanding-the-role-of-the-discount-factor-in-reinforcement-learning)
 
@@ -79,25 +87,12 @@ We need the discount factor gamma, to compute the total cumulative reward given 
 * If γ=0, the agent will be completely myopic and only learn about actions that produce an immediate reward. 
 * If γ=1, the agent will evaluate each of its actions based on the sum total of all of its future rewards
 
-### Sparse/Shaped
+## Additionnal Material
 
-* Sparse reward ⇒ 1 win, 0 loss
-* Shaped reward (or shaping) ⇒ offers a smooth gradient of rewards as the agent approach the objective 
+[📺**Writing Great Reward Functions - Bonsai**](https://www.youtube.com/watch?time_continue=128&v=0R3PnJEisqk&feature=emb_logo)
 
-## Note
-
-Designing reward functions is a hard problem indeed. Generally, sparse reward functions are easier to define (e.g., get +1 if you win the game, else 0). However, sparse rewards also slow down learning because the agent needs to take many actions before getting any reward. This problem is also known as the **credit assignment problem**.
-https://www.cs.ubc.ca/~murphyk/Bayes/pomdp.html
-
-- **Writing Great Reward Functions - Bonsai**
-
-    Raise to power less than one ⇒ Add some sharpness ⇒ Gradient is sharp towards the goal
-    [https://www.youtube.com/watch?time_continue=128&v=0R3PnJEisqk&feature=emb_logo](https://www.youtube.com/watch?time_continue=128&v=0R3PnJEisqk&feature=emb_logo)
-    10:22
-
-    ![RL%20DeepMind/Untitled.png](RL%20DeepMind/Untitled.png)
-
-    Often best to bound reward between -1 and 1
+10:22 => Raise to power less than one ⇒ Add some sharpness ⇒ Gradient is sharp towards the goal\
+Often best to bound reward between -1 and 1
 
 # Value
 
@@ -119,7 +114,9 @@ V* is the optimal value, obtained using an optimal policy
 
 **Possible to condition the value on actions**
 
-$$q(s,a)=\mathbb{E}[G_t|S_t=s, A_t=a] \\ =\mathbb{E}[R_{t+1}+R_{t+2}+R_{t+3}+... |S_t=s, A_t=a]$$
+![q(s,a)=\mathbb{E}\[G_t|S_t=s, A_t=a\] \\ =\mathbb{E}\[R_{t+1}+R_{t+2}+R_{t+3}+... |S_t=s, A_t=a\]](https://render.githubusercontent.com/render/math?math=q(s%2Ca)%3D%5Cmathbb%7BE%7D%5BG_t%7CS_t%3Ds%2C%20A_t%3Da%5D%20%5C%5C%20%3D%5Cmathbb%7BE%7D%5BR_%7Bt%2B1%7D%2BR_%7Bt%2B2%7D%2BR_%7Bt%2B3%7D%2B...%20%7CS_t%3Ds%2C%20A_t%3Da%5D)
+
+<!-- q(s,a)=\mathbb{E}[G_t|S_t=s, A_t=a] \\ =\mathbb{E}[R_{t+1}+R_{t+2}+R_{t+3}+... |S_t=s, A_t=a]$$ -->
 
 # Environment
 
@@ -127,7 +124,8 @@ $$q(s,a)=\mathbb{E}[G_t|S_t=s, A_t=a] \\ =\mathbb{E}[R_{t+1}+R_{t+2}+R_{t+3}+...
 
 History ⇒ Sequence of observations, actions, rewards
 
-$$H_t=O_0,A_0,R_0,...,O_{t-1},A_{t-1},R_t,O_t$$
+![H_t=O_0,A_0,R_0,...,O_{t-1},A_{t-1},R_t,O_t](https://render.githubusercontent.com/render/math?math=H_t%3DO_0%2CA_0%2CR_0%2C...%2CO_%7Bt-1%7D%2CA_%7Bt-1%7D%2CR_t%2CO_t)
+<!-- H_t=O_0,A_0,R_0,...,O_{t-1},A_{t-1},R_t,O_t -->
 
 **History can be used to construct an "Agent State" S_t**
 
