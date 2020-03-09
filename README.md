@@ -8,7 +8,7 @@ My first goal is to follow the DeepMind class, try to implement all the examples
 [Material for UCL Reinforcement Learning class](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html)
 [Reinforcement Learning: An Introduction - Richard S. Sutton and Andrew G. Barto.](RL%20DeepMind/RLbook2018.pdf)
 
-# [(Deepmind) Reinforcement Learning 1: Introduction to Reinforcement Learning](https://youtu.be/ISk80iLhdfU)
+## [(Deepmind) Reinforcement Learning 1: Introduction to Reinforcement Learning](https://youtu.be/ISk80iLhdfU)
 
 What is reinforcement learning ?
 "Reinforcement learning (RL) is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize some notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning." 
