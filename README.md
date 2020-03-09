@@ -23,12 +23,12 @@ What is reinforcement learning ?
 You can have a reinforcement learning framework/Problems because of the sequential nature that they possess without necessarely applying reinforcement learning methods/algorithms to solve them.
 
 At each step t:\
-The agent:\
-* Receives observation Ot (and reward Rt)
-* Executes action At\
-The environment:
-* Receives action At
-* Emits observation Ot+l (and reward Rt+1)
+* The agent:
+    * Receives observation Ot (and reward Rt)
+    * Executes action At
+* The environment:
+    * Receives action At
+    * Emits observation Ot+l (and reward Rt+1)
 
 # Reward & Return
 
@@ -73,21 +73,16 @@ penalties.
 
 ### Discount Factor (β or γ)
 
-- Toggle List
+[Stackexchange - Role of discount factor](https://stats.stackexchange.com/questions/221402/understanding-the-role-of-the-discount-factor-in-reinforcement-learning)
 
-    Stackexchange - Role of discount factor [https://stats.stackexchange.com/questions/221402/understanding-the-role-of-the-discount-factor-in-reinforcement-learning](https://stats.stackexchange.com/questions/221402/understanding-the-role-of-the-discount-factor-in-reinforcement-learning)
-
-    We need the discount factor gamma, to compute the total cumulative reward given by the sum of whole single step rewards, This means that getting a larger reward now and a smaller reward later is preferred to getting a smaller reward now and a larger reward later.
-
-    If γ=0, the agent will be completely myopic and only learn about actions that produce an immediate reward. 
-
-    If γ=1, the agent will evaluate each of its actions based on the sum total of all of its future rewards
+We need the discount factor gamma, to compute the total cumulative reward given by the sum of whole single step rewards, This means that getting a larger reward now and a smaller reward later is preferred to getting a smaller reward now and a larger reward later.
+* If γ=0, the agent will be completely myopic and only learn about actions that produce an immediate reward. 
+* If γ=1, the agent will evaluate each of its actions based on the sum total of all of its future rewards
 
 ### Sparse/Shaped
 
-Sparse reward ⇒ 1 win, 0 loss
-
-Shaped reward (or shaping) ⇒ offers a smooth gradient of rewards as the agent approach the objective 
+* Sparse reward ⇒ 1 win, 0 loss
+* Shaped reward (or shaping) ⇒ offers a smooth gradient of rewards as the agent approach the objective 
 
 ## Note
 
@@ -140,16 +135,16 @@ $$H_t=O_0,A_0,R_0,...,O_{t-1},A_{t-1},R_t,O_t$$
 
 **Environment completely observable ⇒ the agent = Markov decision Process (MDPs)**
 
-Observation = Environment state (ex: Single-player board game)
-S_t = O_t = environment state
-Markov processes ~ short memory
+Observation = Environment state (ex: Single-player board game)\
+S_t = O_t = environment state\
+Markov processes ~ short memory\
 The future does not depends on the whole story, but only on the current state
 
 "the future is independent of the past given the present"
 
 ## Partially Observable Environments
 
-Environment partially observable where some variables important are not observable
+Environment partially observable where some variables important are not observable\
 Dynamic latent variable models ~ Hidden Markov Models
 
 Partial observability: The agent gets partial information
@@ -157,6 +152,6 @@ Partial observability: The agent gets partial information
 - A robot with camera vision isn't told its absolute location
 - A poker playing agent only observes public cards
 
-Now the observation is not Markov
-Formally this is a partially observable Markov decision process (POMDP)
+Now the observation is not Markov\
+Formally this is a partially observable Markov decision process (POMDP)\
 The environment state can still be Markov, but the agent does not know it
