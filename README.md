@@ -22,10 +22,10 @@ What is reinforcement learning ?
 
 You can have a reinforcement learning framework/Problems because of the sequential nature that they possess without necessarely applying reinforcement learning methods/algorithms to solve them.
 
-At each step t:
-The agent:
+At each step t:\
+The agent:\
 * Receives observation Ot (and reward Rt)
-* Executes action At
+* Executes action At\
 The environment:
 * Receives action At
 * Emits observation Ot+l (and reward Rt+1)
