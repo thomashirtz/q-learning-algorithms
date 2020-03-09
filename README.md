@@ -1,3 +1,4 @@
+<!-- This is commented out. -->
 # reinforcement_learning
 
 This repo will share content, notes and material to learn reinforcement leanring. 
@@ -5,26 +6,43 @@ My first goal is to follow the DeepMind class, try to implement all the examples
 
 ## References:
 [Deepmind/UCL RL course on Youtube](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs)
+
 [Material for UCL Reinforcement Learning class](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html)
+
 [Reinforcement Learning: An Introduction - Richard S. Sutton and Andrew G. Barto.](RL%20DeepMind/RLbook2018.pdf)
 
 ## [(Deepmind) Reinforcement Learning 1: Introduction to Reinforcement Learning](https://youtu.be/ISk80iLhdfU)
+
+# Principle
+
+TODO ~8m30
 
 What is reinforcement learning ?
 "Reinforcement learning (RL) is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize some notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning." 
 -[Wikipedia](https://en.wikipedia.org/wiki/Reinforcement_learning)
 
+You can have a reinforcement learning framework/Problems because of the sequential nature that they possess without necessarely applying reinforcement learning methods/algorithms to solve them.
+
+At each step t:
+The agent:
+* Receives observation Ot (and reward Rt)
+* Executes action At
+The environment:
+* Receives action At
+* Emits observation Ot+l (and reward Rt+1)
+
 # Reward & Return
 
 **A reward is a scalar feedback signal**
 
-Return (G) is equal to the Cumulative reward (R)
+The Return (G) is equal to the Cumulative Reward (R)
 
 ![G_t=R_{t+1}+R_{t+2}+R_{t+3}+...](https://render.githubusercontent.com/render/math?math=G_t%3DR_%7Bt%2B1%7D%2BR_%7Bt%2B2%7D%2BR_%7Bt%2B3%7D%2B...)
+<!-- G_t=R_{t+1}+R_{t+2}+R_{t+3}+... -->
 
 **Goal ⇒ Maximize the expected total cumulative reward**
 
-In computer science , Reward is reward even if it is negative, in theory it is called penalty
+In computer science, reward is reward even if it is negative, even though it should be called penalty in theory
 
 Continuing problem, the sum/problem doesn't end
 
@@ -93,12 +111,13 @@ https://www.cs.ubc.ca/~murphyk/Bayes/pomdp.html
 
 Notation: E = Expected
 
-$$v(s)=\mathbb{E}[G_t|S_t=s] \\ =\mathbb{E}[R_{t+1}+R_{t+2}+R_{t+3}+... |S_t=s]$$
-
+![v(s)=\mathbb{E}\[G_t|S_t=s\] \\ =\mathbb{E}\[R_{t+1}+R_{t+2}+R_{t+3}+... |S_t=s\]](https://render.githubusercontent.com/render/math?math=v(s)%3D%5Cmathbb%7BE%7D%5BG_t%7CS_t%3Ds%5D%20%5C%5C%20%3D%5Cmathbb%7BE%7D%5BR_%7Bt%2B1%7D%2BR_%7Bt%2B2%7D%2BR_%7Bt%2B3%7D%2B...%20%7CS_t%3Ds%5D)
+<!-- v(s)=\mathbb{E}[G_t|S_t=s] \\ =\mathbb{E}[R_{t+1}+R_{t+2}+R_{t+3}+... |S_t=s] -->
+G_t=R_{t+1}+G_{t+1}
 Also:
 
-$$G_t=R_{t+1}+G_{t+1}$$
-
+![G_t=R_{t+1}+G_{t+1}](https://render.githubusercontent.com/render/math?math=G_t%3DR_%7Bt%2B1%7D%2BG_%7Bt%2B1%7D)
+<!-- G_t=R_{t+1}+G_{t+1} -->
 V* is the optimal value, obtained using an optimal policy
 
 ⇒ Goal is to select actions to maximise **value**
