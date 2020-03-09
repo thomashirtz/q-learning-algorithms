@@ -7,4 +7,4 @@ My first goal is to follow the DeepMind class, try to implement all the examples
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ISk80iLhdfU
 " target="_blank"><img src="http://img.youtube.com/vi/ISk80iLhdfU/0.jpg" 
-alt="Reinforcement Learning 1: Introduction to Reinforcement Learning" width="240" height="180" border="10" /></a>
+alt="Reinforcement Learning 1: Introduction to Reinforcement Learning" width="480" height="360" border="0" /></a>
