@@ -10,6 +10,8 @@ My first goal is to try to implement all the examples/demonstration of the Richa
 [📓 Reinforcement Learning: An Introduction - Richard S. Sutton and Andrew G. Barto.](RL%20DeepMind/RLbook2018.pdf)\
 
 
-# Chapter 2: Multi-armed Bandits
+## Chapter 2: Multi-armed Bandits
 
-# 
+## DeepQ Learning
+
+## Monte Carlo ES
