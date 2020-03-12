@@ -11,6 +11,9 @@ My first goal is to try to implement all the examples/demonstration of the Richa
 
 
 ## Chapter 2: Multi-armed Bandits
+
+![The 10 armed testbed](images/2.3.png)
+
 [Notebook: The 10 armed testbed](2.3-the-10-armed-testbed.ipynb)
 
 ## DeepQ Learning
