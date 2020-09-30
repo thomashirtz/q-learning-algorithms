@@ -1,5 +1,5 @@
 <!-- This is commented out. -->
-# 🔬 reinforcement_learning
+# 🔬 reinforcement-learning
 
 This repo will share content, notes and material to learn reinforcement leanring. 
 My first goal is to try to implement all the examples/demonstration of the Richard S. Sutton and Andrew G. Barto. book "Reinforcement Learning: An Introduction"
@@ -16,6 +16,3 @@ My first goal is to try to implement all the examples/demonstration of the Richa
 
 [Notebook: The 10 armed testbed](2.3-the-10-armed-testbed.ipynb)
 
-## DeepQ Learning
-
-## Monte Carlo ES
