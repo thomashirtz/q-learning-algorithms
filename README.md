@@ -23,8 +23,7 @@ state = env.reset()
 done = False
 while not done:
     action = agent.choose_action(state)
-    next_state, reward, done, _ = env.step(action)
-    state = next_state
+    state, _, _, _ = env.step(action)
 ```
 
 ## 📚 References:
