@@ -12,6 +12,20 @@ This repository will contain implementation of reinforcement learning algorithm.
 - [x] [Dueling Deep Q-Learning](dueling-deep-q-learning.py)
 - [ ] Double Deep Q-Learning
 
+## Recording the environment
+
+Code to save a mp4 video of an agent:
+
+```
+env = gym.make(ENVIRONMENT)
+env = gym.wrappers.Monitor(env, "./video", force=True)
+state = env.reset()
+done = False
+while not done:
+    action = agent.choose_action(state)
+    next_state, reward, done, _ = env.step(action)
+    state = next_state
+```
 
 ## 📚 References:
 [📺 Deepmind/UCL reinforcement learning courses on Youtube](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs)\
