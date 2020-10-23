@@ -9,8 +9,8 @@ This repository will contain implementation of reinforcement learning algorithm.
 ![dueling-dqn-cartpole](images/dueling-dqn-cartpole.gif)
 
 - [x] [Deep Q-Learning](deep-q-learning.py)
+- [x] [Double Deep Q-Learning](double-deep-q-learning.py)
 - [x] [Dueling Deep Q-Learning](dueling-deep-q-learning.py)
-- [ ] Double Deep Q-Learning
 - [ ] Noisy Deep Q-Learning
 - [ ] Rainbow Q-Learning
 - [ ] Deep Q-Learning with Prioritized Replay
