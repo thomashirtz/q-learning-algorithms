@@ -1,7 +1,7 @@
 <!-- This is commented out. -->
 # 🔬 reinforcement-learning
 
-This repository will contain implementation of reinforcement learning algorithm. The end goal is to have a library of algorithm ready to use, as simple as possible, but not simpler. It is partly inspired by the repository [minimalRL](https://github.com/seungeunrho/minimalRL) but less extreme with the implementations.
+This repository will contain implementation of reinforcement learning algorithm using Pytorch. The end goal is to have a library of algorithm ready to use, as simple as possible, but not simpler. It is partly inspired by the repository [minimalRL](https://github.com/seungeunrho/minimalRL) but less extreme with the implementations.
 
 
 ## Deep Q-Learning
@@ -31,9 +31,9 @@ while not done:
 ```
 ## Requirements
 
-gym
-numpy
-pytorch
+gym  
+numpy  
+pytorch  
 
 ## 📚 References:
 [📺 Deepmind/UCL reinforcement learning courses on Youtube](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs)\
