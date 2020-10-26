@@ -12,13 +12,13 @@ This repository will contain implementation of reinforcement learning algorithm.
 - [x] [Double Deep Q-Learning](double-deep-q-learning.py)
 - [x] [Dueling Deep Q-Learning](dueling-deep-q-learning.py)
 - [x] [Noisy Deep Q-Learning](noisy-deep-q-learning.py)
-- [ ] Rainbow Q-Learning
 - [ ] Deep Q-Learning with Prioritized Replay
-- [ ] A3C
+- [ ] Parametrized Deep Q-Learning
+- [ ] Rainbow Q-Learning
 
 ## Recording the environment
 
-Code to save a mp4 video of an agent:
+Save a mp4 video of an agent:
 
 ```
 env = gym.make(ENVIRONMENT)
@@ -29,6 +29,11 @@ while not done:
     action = agent.choose_action(state)
     state, _, _, _ = env.step(action)
 ```
+## Requirements
+
+gym
+numpy
+pytorch
 
 ## 📚 References:
 [📺 Deepmind/UCL reinforcement learning courses on Youtube](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs)\
