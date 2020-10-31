@@ -12,9 +12,9 @@ This repository will contain implementation of reinforcement learning algorithm.
 - [x] [Double Deep Q-Learning](double-deep-q-learning.py)
 - [x] [Dueling Deep Q-Learning](dueling-deep-q-learning.py)
 - [x] [Noisy Deep Q-Learning](noisy-deep-q-learning.py)
+- [x] [Deep Q-Learning with Prioritized Replay](per_dqn.py)
+- [ ] Parametrized Deep Q-Learning
 - [ ] Rainbow Q-Learning
-- [ ] Deep Q-Learning with Prioritized Replay
-- [ ] A3C
 
 ## Recording the environment
 
