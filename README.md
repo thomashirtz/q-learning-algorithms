@@ -18,7 +18,7 @@ This repository will contain implementation of reinforcement learning algorithm.
 
 ## Recording the environment
 
-Code to save a mp4 video of an agent:
+Save a mp4 video of an agent:
 
 ```
 env = gym.make(ENVIRONMENT)
@@ -29,6 +29,11 @@ while not done:
     action = agent.choose_action(state)
     state, _, _, _ = env.step(action)
 ```
+## Requirements
+
+gym  
+numpy  
+pytorch  
 
 ## 📚 References:
 [📺 Deepmind/UCL reinforcement learning courses on Youtube](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs)\
