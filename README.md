@@ -8,11 +8,11 @@ This repository will contain implementation of reinforcement learning algorithm.
 
 ![dueling-dqn-cartpole](images/dueling-dqn-cartpole.gif)
 
-- [x] [Deep Q-Learning](deep-q-learning.py)
-- [x] [Double Deep Q-Learning](double-deep-q-learning.py)
-- [x] [Dueling Deep Q-Learning](dueling-deep-q-learning.py)
-- [x] [Noisy Deep Q-Learning](noisy-deep-q-learning.py)
-- [x] [Deep Q-Learning with Prioritized Replay](per_dqn.py)
+- [x] [Deep Q-Learning](deep_q_learning)
+- [x] [Double Deep Q-Learning](double_deep_q_learning)
+- [x] [Dueling Deep Q-Learning](dueling_deep_q_learning)
+- [x] [Noisy Deep Q-Learning](noisy_networks)
+- [x] [Deep Q-Learning with Prioritized Replay](prioritized_experience_replay)
 - [ ] Parametrized Deep Q-Learning
 - [ ] Rainbow Q-Learning
 
