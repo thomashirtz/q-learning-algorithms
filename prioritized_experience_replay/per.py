@@ -68,9 +68,6 @@ class SumTree:
     def __len__(self):
         return np.count_nonzero(self.tree[-self.capacity:])
 
-alpha = 0.6
-beta = 0.4
-epsilon = 0.01
 
 class ProportionalPrioritizedMemory:
     def __init__(self, capacity, epsilon=0.01):
