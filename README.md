@@ -13,7 +13,8 @@ This repository will contain implementation of reinforcement learning algorithm.
 - [x] [Dueling Deep Q-Learning](dueling_deep_q_learning)
 - [x] [Noisy Deep Q-Learning](noisy_networks)
 - [x] [Deep Q-Learning with Prioritized Replay](prioritized_experience_replay)
-- [ ] Parametrized Deep Q-Learning
+- [x] [Parametrized Deep Q-Learning](parameterized_deep_q_learning)
+- [ ] Distributed Deep Q-Learning
 - [ ] Rainbow Q-Learning
 
 ## Recording the environment
