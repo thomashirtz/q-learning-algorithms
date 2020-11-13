@@ -12,3 +12,7 @@ This implementation is more minimalistic, the hyperparameter are well tuned. The
 Here is the algorithm taken from the original paper [[Playing Atari with Deep Reinforcement Learning]](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf)
 
 ![algorithm](../images/deep_q_learning_algorithm.jpg)
+
+## Results 
+
+![Deep Q-Learning](../images/deep_q_learning.png)
