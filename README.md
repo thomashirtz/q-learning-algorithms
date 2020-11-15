@@ -14,8 +14,10 @@ This repository will contain implementation of reinforcement learning algorithm.
 - [x] [Noisy Deep Q-Learning](noisy_networks)
 - [x] [Deep Q-Learning with Prioritized Replay](prioritized_experience_replay)
 - [x] [Parametrized Deep Q-Learning](parameterized_deep_q_learning)
-- [ ] Distributed Deep Q-Learning
+- [x] Distributed Deep Q-Learning
+- [ ] Multi-Step Deep Q-Learning
 - [ ] Rainbow Q-Learning
+- [ ] Ape-X
 
 ## Recording the environment
 
