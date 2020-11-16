@@ -4,7 +4,7 @@
 This repository will contain implementation of reinforcement learning algorithm. The end goal is to have a library of algorithm ready to use, as simple as possible, but not simpler. It is partly inspired by the repository [minimalRL](https://github.com/seungeunrho/minimalRL) but less extreme with the implementations.
 
 
-## Deep Q-Learning
+## Algorithms
 
 ![dueling-dqn-cartpole](images/dueling-dqn-cartpole.gif)
 
@@ -14,14 +14,14 @@ This repository will contain implementation of reinforcement learning algorithm.
 - [x] [Noisy Deep Q-Learning](noisy_networks)
 - [x] [Deep Q-Learning with Prioritized Replay](prioritized_experience_replay)
 - [x] [Parametrized Deep Q-Learning](parameterized_deep_q_learning)
-- [x] Distributed Deep Q-Learning
+- [x] [Distributed Deep Q-Learning](distributed_deep_q_learning)
 - [ ] Multi-Step Deep Q-Learning
 - [ ] Rainbow Q-Learning
 - [ ] Ape-X
 
 ## Recording the environment
 
-Save a mp4 video of an agent:
+Save an mp4 video of an agent:
 
 ```
 env = gym.make(ENVIRONMENT)
