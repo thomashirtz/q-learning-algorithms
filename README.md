@@ -23,7 +23,7 @@ This repository will contain implementation of reinforcement learning algorithm.
 
 Save an mp4 video of an agent:
 
-```
+```python
 env = gym.make(ENVIRONMENT)
 env = gym.wrappers.Monitor(env, "./video", force=True)
 state = env.reset()
