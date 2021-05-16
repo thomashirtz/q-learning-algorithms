@@ -1,7 +1,6 @@
-<!-- This is commented out. -->
-# 🔬 reinforcement-learning
+# q-learning-algorithms
 
-This repository will contain implementation of reinforcement learning algorithm. The end goal is to have a library of algorithm ready to use, as simple as possible, but not simpler. It is partly inspired by the repository [minimalRL](https://github.com/seungeunrho/minimalRL) but less extreme with the implementations.
+This repository will contain implementations of deep Q-learning algorithms. The end goal is to have a library of algorithms ready to use, as simple as possible, but not simpler. It is partly inspired by the repository [minimalRL](https://github.com/seungeunrho/minimalRL) but less extreme with the implementations.
 
 
 ## Algorithms
@@ -19,19 +18,6 @@ This repository will contain implementation of reinforcement learning algorithm.
 - [ ] Rainbow Q-Learning
 - [ ] Ape-X
 
-## Recording the environment
-
-Save an mp4 video of an agent:
-
-```python
-env = gym.make(ENVIRONMENT)
-env = gym.wrappers.Monitor(env, "./video", force=True)
-state = env.reset()
-done = False
-while not done:
-    action = agent.choose_action(state)
-    state, _, _, _ = env.step(action)
-```
 ## Requirements
 
 gym  
